@@ -1,0 +1,73 @@
+/*desktop*/
+@media screen and (min-width:960px){
+    /*container클래스에 적용할 css*/
+    .container {
+        background-color: skyblue; /*배경색*/
+        display: grid; /*그리드레이아웃 적용*/
+        text-align: center; /*중앙정렬*/
+        grid-template-areas: /*page 배치를 나타냄*/
+        "header header header"
+        "nav nav nav"
+        "introduction study project"
+        ;
+    }
+
+    
+
+    
+
+}
+
+/*tablet*/
+@media screen and (min-width:641px) and (max-width:959px){
+    .container {
+        background-color: green; /*배경색*/
+        display: grid; /*그리드레이아웃 적용*/
+        text-align: center; /*중앙정렬*/
+        grid-template-areas: /*page 배치를 나타냄*/
+        "header header"
+        "nav nav "
+        "introduction introduction"
+        "study project"
+        ;
+    }
+}
+
+/*phone*/
+@media screen and (max-width:640px){
+    .container {
+        background-color: skyblue; /*배경색*/
+        display: grid; /*그리드레이아웃 적용*/
+        text-align: center; /*중앙정렬*/
+        grid-template-areas: /*page 배치를 나타냄*/
+        "header"
+        "nav"
+        "introduction"
+        "study"
+        "project"
+        ;
+    }
+}
+
+.anchor{
+    display: inline-block;
+}
+
+#project{
+    grid-area: project;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+#introduction{
+    grid-area: introduction;
+}
+
+#study{
+    grid-area: study;
+}
