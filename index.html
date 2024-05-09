@@ -1,116 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="homepage.css" media="screen">
-
+<title>우도연의 개인 홈페이지</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 </head>
+<body>
 
-<body class="container">
-
-    <header>
-        <h1> 우도연의 홈페이지 </h1>    
-    </header>
-    
-<nav>
-<ul>
-    
-    <li class="anchor"><a href="#내 소개"> 내 소개</a></li> 
-    <li class="anchor"><a href="#SW 공부"> SW 공부</a></li> 
-    <li class="anchor"><a href="#프로젝트 팀원"> 프로젝트 팀원</a></li> 
-
-</ul>
-
-</nav>
-
-
-
-    <div id="introduction">
-   <img src="증명사진.jpg" alt="" width="320">
-
-    <h3>
-        한국폴리텍 성남캠퍼스 인공지능소프트웨어과
-        <br>전화번호 : 031-739-4033</br>
-        이메일 : dydy1212qwqw@naver.com
-    </h3>
-
-    <hr>
-    <p>
-
-        우도연의 홈페이지에 오신 것을 환영합니다. 이 홈페이지는 인터페이스 디자인실습 강의의 실습 예제로 만들었습니다. 오늘 처음으
-        로 글자태그를 배우고 있는데 열심히 배워서 멋진 홈페이지를 만들어 보겠습니다 <br>
-    </p>
-    <p>
-        글자 태그를 배우고 나서 빨리 목록 태그도 배워서 저에 대해서 목록으로 표현을 할 수 있으면 좋곘습니다. 오늘 강의에서 목록태그
-        를 배우고 나면, 제 홈페이지에 저에 대한 몇가지 사실을 목록 태그를 활영하여 알려드릴께요
-
-
-    </p>
-
-</div>
-
-
-    <div id="study">
-
-
-
-
-
-    <h2> 지금 SW를 공부하고 있어요.</h2>
-
-    <table border=2>
-        <caption> 이번 학기에 배우는 과목 </caption>
-        <tr>
-            <td>
-                <center>과목</center>
-            </td>
-            <td>
-                <center> 시간 </center>
-            <td>
-                <center> 과목설정 </center>
-            </td>
-        </tr>
-        <tr>
-            <td>인터페이스 디자인 실습</td>
-            <td>
-                <ul>
-                    <li> 화 오전 10:30 ~ 11:45</li>
-                    <li> 금 오전 9:00 ~ 10:15</li>
-                </ul>
-            </td>
-            <td> 웹페이지 만들기 위한 HTML, CSS, JavaScript </td>
-
-
-
-
-        </tr>
-    
-</table>
-</div>
-<div id = "project">
-    <ul>
-        <li> <a href="https://www.acmicpc.net/user/dydy1212qwqw"> 나의 BOJ 현황 </a></li>
-        <li> <a href="https://github.com/woodoyeon"> 나의 GitHub 현황 </a></li>
-    </ul>
-
-    <hr>
-
-    <h2> 나랑 같이 프로젝트를 하고 있느 팀원</h2>
-
-    <ul>
-        <li> <a href="https://www.acmicpc.net/user/dydy1212qwqw"> 박준혁 </a></li>
-        <li> <a href="https://github.com/woodoyeon"> 유민규 </a></li>
-        <li> <a href="https://www.acmicpc.net/user/dydy1212qwqw"> 안형욱 </a></li>
-
-
-    </ul>
-
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#intro" class="w3-bar-item w3-button w3-padding-large w3-hide-small">우도연소개</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hide-small">현재 진행 프로젝트</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">포트폴리오</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">연락처</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
     </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
 
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#intro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">우도연소개</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">현재 진행 프로젝트</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">포트폴리오</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">연락처</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3></h3>
+      <p><b></b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3></h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.w3schools.com/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3></h3>
+      <p><b></b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="intro">
+    <h2 class="w3-wide">우도연 소개</h2>
+    <p class="w3-opacity"><i>인공지능 소프트웨어과 24학번, 성남폴리텍대학교</i></p>
+    <p class="w3-justify">HTML, CSS, JavaScript, 자바, 파이썬, SQL, R 프로그래밍 등의 웹 개발에 관심이 있고, 인공지능을 이용한 웹 프로그램을 제작하는 것을 최종 목표로 하고 있습니다. 또한 문화와 예술에 관심이 많으며, 다양한 분야의 책을 읽는 것을 좋아하고 경제와 제태크에 관심이 많습니다. 어렸을 때 골프 선수를 하고 은퇴한 후에는 그 경험을 토대로 남서울 골프 아카데미에서 쥬니어 학생들을 가르쳤습니다. 이후에는 플랫폼의 인기로 웹과 앱을 제작하는 회사를 운영하고 매트리스, 배터리 등을 직접 제작해서 판매했습니다. 현재는 인공지능 소프트웨어 학과에 진학하여 웹과 앱을 더 깊이 배우고 있습니다.</p>
+    <h3>프로필 사진</h3>
+    <img src="우도연.jpg" alt="프로필 사진">
+  </div>
+
+  <!-- 현재 진행 프로젝트 Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="portfolio">
+    <h2 class="w3-wide">현재 진행 프로젝트</h2>
+    <p class="w3-justify">현재 개발 중인 가상화폐 거래소 사이트. 가상화폐 거래소 사이트는 사용자가 가상화폐를 거래하고 관리할 수 있는 플랫폼입니다. 저희가 개발 중인 거래소 사이트는 사용자 친화적인 UI와 안전한 거래 환경을 제공할 예정입니다.</p>
+    <a href="가상화폐_거래소_사이트_주소">가상화폐 거래소 사이트 바로가기</a>
+    <h3>팀원 사이트 링크</h3>
+    <ul>
+      <li><a href="https://wook89.github.io/">안형욱 사이트</a></li>
+      <li><a href="https://hyodong123.github.io/">김효동 사이트</a></li>
+      <li><a href="https://yerinfan.github.io/">이예은 사이트</a></li>
+      <li><a href="유민규_사이트_주소">유민규 사이트</a></li>
+      <li><a href="https://junhyeokp.github.io/">박준혁 사이트</a></li>
+    </ul>
+  </div>
+
+  <!-- 포트폴리오 Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="projects">
+    <h2 class="w3-wide">포트폴리오</h2>
+    <ul>
+      <li>초소형 배터리 브랜드 "didpro" <a href="https://didpro.kr/">사이트 바로가기</a></li>
+    </ul>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">연락처</h2>
+    <p class="w3-opacity w3-center"><i>더 궁금한 사항이나 의뢰 사항이 있으면 이쪽으로 연락해주세요.</i></p>
+    <p class="w3-large w3-center"><i class="fa fa-github"></i> 나의 깃허브 사이트 주소: <a href="https://github.com/woodoyeon">깃허브</a></p>
+    <p class="w3-large w3-center"><i class="fa fa-codeforces"></i> 나의 백준 사이트 주소: <a href="https://www.acmicpc.net/user/dydy1212qwqw">백준</a></p>
+    <p class="w3-large w3-center"><i class="fa fa-phone"></i> 연락처: 010-2270-1130</p>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
-
 </html>
